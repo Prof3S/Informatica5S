@@ -4,7 +4,7 @@ Materiali per la classe 5S
 ## Lavori presenti
 
 ### Lavoro 1
-Creare un database utilizzando MySQL per la gestione di un e-comemrce.\\
+Creare un database utilizzando MySQL per la gestione di un e-comemrce.  
 In particolare si vogliono gestire i clienti (registrati tramite un form presente sul sito), i fornitori, 
 gli ordini (disponibili su un'altra pagina del sito una volta effettuato l'accesso) ed i prodotti 
 (anche questi disponibili sul siti).
