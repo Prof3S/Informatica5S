@@ -8,7 +8,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f0f2f5;
-    background: url('rolex.jpg') no-repeat center center fixed;
+    background: url('../JPG/rolex.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
