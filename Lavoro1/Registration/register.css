@@ -1,0 +1,78 @@
+/* styles.css */
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+    padding: 0;
+    background: url('manoconorologio.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.registration-form {
+    background-color: rgba(171, 212, 217, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 400px;
+    font-family:'Times New Roman', Times, serif
+}
+
+.registration-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    font-family:'Times New Roman', Times, serif
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family:'Times New Roman', Times, serif
+}
+
+button:hover {
+    background-color: #0056b3;
+}
