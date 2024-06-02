@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $pdo = null;
         $stmt = null;
 
-        header('Location: ../PHP/register.php');
+        header('Location: ../HTML/Form.html');
         die();
 
         } catch (PDOException $e) {
