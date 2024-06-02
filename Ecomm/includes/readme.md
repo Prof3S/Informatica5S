@@ -1,1 +1,0 @@
-### This folder contains file to guarantee connection between php, html5 and MySQL db
