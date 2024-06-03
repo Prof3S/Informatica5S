@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrello - E-Lusso</title>
+    <link rel="stylesheet" href="../CSS/cart.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="Main.php">E-Lusso</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="tiffany.php">Tiffany</a></li>
+                <li><a href="rolex.php">Rolex</a></li>
+                <li><a href="patek.php">Patek Philippe</a></li>
+                <li><a href="login.php">Login</a></li>
+                <li><a href="cart.html">Carrello</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="cart">
+            <h2>Il Tuo Carrello</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome Prodotto</th>
+                        <th>Quantità</th>
+                        <th>Prezzo Unitario</th>
+                        <th>Prezzo Totale</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Esempio di prodotti nel carrello -->
+                    <tr>
+                        <td>Orologio Rolex Submariner</td>
+                        <td>1</td>
+                        <td>8500 €</td>
+                        <td>8500 €</td>
+                    </tr>
+                    <tr>
+                        <td>Collana Tiffany & Co.</td>
+                        <td>1</td>
+                        <td>1200 €</td>
+                        <td>1200 €</td>
+                    </tr>
+                    <!-- I prodotti saranno generati dinamicamente da uno script lato server come PHP -->
+                </tbody>
+            </table>
+            <div class="cart-total">
+                <p>Totale Ordine: <span>9700 €</span></p>
+                <a href="checkout.html" class="btn">Procedi al Checkout</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 E-Lusso. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
