@@ -2,4 +2,4 @@
 
 Lavoro1  
   |______ js            (javascript utili)     
-  |______ Registration  (html5 + php + jpeg per i form di login e registrazione)
+  |______ Registration  (html5 + php + CSS + jpeg)
