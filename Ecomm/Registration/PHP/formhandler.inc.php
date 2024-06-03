@@ -1,20 +1,20 @@
 <?php
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $username = $_POST["Username"];
     $pwd = $_POST["Pwd"];   
     $name = $_POST["Name"];
     $surname = $_POST["Surname"];
     $address = $_POST["Address"];
     $telephone = $_POST["Telephone"];
+    $username = $_POST["Username"];
 
     try {
         require_once "dbh.inc.php";
 
-        $query = "INSERT INTO Utenti (Username, Password, Name, Surname, Address, Telephone)
+        $query = "INSERT INTO Utenti (Pwd, Nome, Cognome, Indirizzo, Telefono, Username)
         VALUES (?, ?, ?, ?, ?, ?);";
         $stmt = $pdo->prepare($query);
-        $stmt->execute([$username, $pwd, $name, $surname, $address, $telephone]);
+        $stmt->execute([$pwd, $name, $surname, $address, $telephone, $username]);
 
         $pdo = null;
         $stmt = null;

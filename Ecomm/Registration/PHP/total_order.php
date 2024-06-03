@@ -14,13 +14,16 @@ if ($conn->connect_error) {
 }
 
 // Esegui la query per ottenere i prodotti
-$sql = "SELECT Descrizione, Prezzo FROM Prodotti;";
+$sql = "SELECT sum(Prezzo) as Totale FROM Prodotti inner join Ordini 
+on Ordini.Numero = Prodotti.Ordine
+where Ordini.Username = 'LaPaz32';";
+
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // Output dei dati di ogni riga
     while($row = $result->fetch_assoc()) {
-        echo "<tr><td>" . $row["Descrizione"]. "</td><td>" . $row["Prezzo"]. " €</td></tr>";
+        echo $row["Totale"];
     }
 } else {
     echo "<tr><td colspan='3'>Nessun prodotto disponibile</td></tr>";
